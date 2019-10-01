@@ -1,0 +1,45 @@
+// cards section
+
+.bg-card-categories {
+    background-image: url(../assets/images/bot-m.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 242px;
+
+    .title-category {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 28px;
+
+    }
+}
+
+.bg-card-opacity {
+    background: rgba(0, 0, 0, 0.5);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-blog {
+    background: white;
+    height: auto;
+
+    .card-blog--img {
+        height: 180px;
+        background-color: pink;
+    }
+
+    .card-blog--content {
+        height: auto;
+        padding: 1.8em;
+
+        .title-section-card {
+            @include mx-title-section;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// Mixin generate padding and margin
+$max: 64;
+$offset: 8;
+$unit: 'px';
+@mixin spaces-loop($className, $styleName) {
+    $i: 0;
+    @while $i <=$max {
+        #{$className + $i} {
+            #{$styleName}: #{$i + $unit};
+        }
+        $i: $i+$offset;
+    }
+}
+
+// padding
+@include spaces-loop('.pl-', 'padding-left');
+@include spaces-loop('.pt-', 'padding-top');
+@include spaces-loop('.pr-', 'padding-right');
+@include spaces-loop('.pb-', 'padding-bottom');
+// Margin
+@include spaces-loop('.ml-', 'margin-left');
+@include spaces-loop('.mt-', 'margin-top');
+@include spaces-loop('.mr-', 'margin-right');
+@include spaces-loop('.mb-', 'margin-bottom');
+
+
+@mixin mx-title-section {
+    color: $blue-va;
+    font-family: $title-font;
+  }
+
+  @mixin mx-title-process {
+    color: white;
+    font-family: $title-font;
+  }
+
+body{
+    font-family: $title-font;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.title-section{
+    @include mx-title-section;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.text-section{
+    @include mx-title-section;
+    font-size: 22px;
+}
+
+.text-card-blog{
+    @include mx-title-section;
+    font-size: 16px;
+    
+}
+

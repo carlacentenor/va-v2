@@ -1,0 +1,48 @@
+.bg-blog {
+    background: skyblue;
+    height: 80vh;
+    padding: 2em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bg-process {
+    background-image: url(../assets/images/325.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    
+    box-sizing: border-box;
+
+    .bg-process--opacity {
+        height: inherit;
+        background:rgb(0, 0, 0,0.5);
+        display: flex;
+        align-items: flex-end;
+       
+       
+        h3 {
+            @include mx-title-process;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .description-process {
+            @include mx-title-process;
+            font-size: 16px;
+            padding-bottom: 2em;
+            line-height: 20px;
+        }
+    }
+    .bg-process-contain{
+        padding: 2em;
+    }
+}
+
+.text-contact{
+    color: $gray-va;
+    font-size: 16px;
+    line-height: 20px;
+}

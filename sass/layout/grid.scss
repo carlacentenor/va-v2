@@ -1,0 +1,19 @@
+
+.grid-categories {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-contact{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-social{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
