@@ -1,18 +1,38 @@
 // cards section
-
 .bg-card-categories {
-    background-image: url(../assets/images/bot-m.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 242px;
-
     .title-category {
         color: #ffffff;
-        font-family: Montserrat;
         font-size: 28px;
-
+        font-weight: bold;
     }
+}
+
+.bot-img {
+    background-image: url(../assets/images/devops-min.jpg);
+}
+
+.ux-img {
+    background-image: url(../assets/images/devops-min.jpg);
+}
+
+.bigdata-img {
+    background-image: url(../assets/images/devops-min.jpg);
+}
+
+.cloud-img {
+    background-image: url(../assets/images/devops-min.jpg);
+}
+
+.server-img {
+    background-image: url(../assets/images/devops-min.jpg);
+}
+
+.devops-img {
+    background-image: url(../assets/images/devops-min.jpg);
 }
 
 .bg-card-opacity {
@@ -26,16 +46,9 @@
 .card-blog {
     background: white;
     height: auto;
-
-    .card-blog--img {
-        height: 180px;
-        background-color: pink;
-    }
-
     .card-blog--content {
         height: auto;
         padding: 1.8em;
-
         .title-section-card {
             @include mx-title-section;
             font-weight: bold;

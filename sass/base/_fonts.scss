@@ -22,41 +22,93 @@ $unit: 'px';
 @include spaces-loop('.mt-', 'margin-top');
 @include spaces-loop('.mr-', 'margin-right');
 @include spaces-loop('.mb-', 'margin-bottom');
-
-
 @mixin mx-title-section {
     color: $blue-va;
     font-family: $title-font;
-  }
+}
 
-  @mixin mx-title-process {
+@mixin mx-title-process {
     color: white;
-    font-family: $title-font;
-  }
+    font-weight: bold;
+}
 
-body{
+//**************************************************************************//
+body {
     font-family: $title-font;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
 
-.title-section{
+.text-justify {
+    text-align: justify;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.logo-position {
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+.title-section {
     @include mx-title-section;
     font-weight: bold;
     font-size: 32px;
 }
 
-.text-section{
+.text-section {
     @include mx-title-section;
     font-size: 22px;
 }
 
-.text-card-blog{
+.text-card-blog {
     @include mx-title-section;
     font-size: 16px;
-    
 }
 
+.title-menu {
+    @include mx-title-process;
+    font-size: 32px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-link-header {
+    color: white;
+    top: -3px;
+}
+
+.text-w-contact {
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.text-form {
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.text-contact {
+    color: $gray-va;
+    font-size: 16px;
+    line-height: 20px;
+}

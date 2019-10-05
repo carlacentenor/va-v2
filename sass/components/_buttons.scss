@@ -1,0 +1,18 @@
+.btn-general {
+    background: #FFFFFF;
+    border: 1px solid $blue-va;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: $blue-va;
+    padding: 0 1em;
+    min-width: 140px;
+    height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+// Links
+.pos-link {
+    top: 32px;
+    left: 32px;
+}

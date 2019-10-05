@@ -1,5 +1,28 @@
+.bg-initial-video {
+    height: 100vh;
+}
+
+.object-cover {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.bg-blue {
+    height: 100vh;
+    width: 100%;
+    background: $blue-dark-va;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .bg-blog {
-    background: skyblue;
+    background-image: url(../assets/images/devops-min.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80vh;
     padding: 2em;
     display: flex;
@@ -7,28 +30,23 @@
 }
 
 .bg-process {
-    background-image: url(../assets/images/325.jpg);
+    background-image: url(../assets/images/devops-min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     color: white;
-    
     box-sizing: border-box;
-
     .bg-process--opacity {
         height: inherit;
-        background:rgb(0, 0, 0,0.5);
+        background: rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: flex-end;
-       
-       
         h3 {
             @include mx-title-process;
             font-size: 36px;
             font-weight: bold;
         }
-
         .description-process {
             @include mx-title-process;
             font-size: 16px;
@@ -36,13 +54,13 @@
             line-height: 20px;
         }
     }
-    .bg-process-contain{
+    .bg-process-contain {
         padding: 2em;
     }
 }
 
-.text-contact{
-    color: $gray-va;
-    font-size: 16px;
-    line-height: 20px;
+.bg-steps {
+    background-color: white;
+    color: $blue-va;
+    padding: 10px 0;
 }
