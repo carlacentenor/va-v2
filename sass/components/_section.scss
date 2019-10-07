@@ -29,6 +29,22 @@
     align-items: flex-end;
 }
 
+.bg-blog-post {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+    .card-blog--content {
+        padding: 1em;
+    }
+    .text-card-blog {
+        color: #555555;
+    }
+}
+
 .bg-process {
     background-image: url(../assets/images/devops-min.jpg);
     background-position: center center;
@@ -63,4 +79,70 @@
     background-color: white;
     color: $blue-va;
     padding: 10px 0;
+    border: 1px solid $blue-va;
+}
+
+// Blog
+.header-blog {
+    height: 20vh;
+    background-image: url(../assets/images/blog.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain-blog {
+    overflow: hidden;
+}
+
+.img-post {
+    height: 639px;
+}
+
+.img-radius {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.img-post-selected {
+    width: 100%;
+}
+
+.pagination-blog {
+    float: right;
+}
+
+.social-circle {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-fb {
+    background: #3b5998;
+}
+
+.social-tw {
+    background: #00acee;
+}
+
+.social-p {
+    background: #c8232c;
+}
+
+.social-g {
+    background: #dd4b39;
+}
+
+.comment {
+    background: hsl(0, 8%, 95%);
+    padding: 1em;
 }

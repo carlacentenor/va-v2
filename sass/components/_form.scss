@@ -19,3 +19,18 @@
     background: $blue-va;
     color: white;
 }
+
+.input-filter {
+    border: 1px solid $blue-dark-va;
+    padding: 8px 36px 8px 8px;
+    width: 100%;
+    background: url(../assets/images/lupa.png) 97% 50% no-repeat;
+    box-sizing: border-box;
+}
+
+.select-filter {
+    border: 1px solid $blue-dark-va;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}

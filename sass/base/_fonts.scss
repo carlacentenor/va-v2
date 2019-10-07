@@ -35,6 +35,7 @@ $unit: 'px';
 //**************************************************************************//
 body {
     font-family: $title-font;
+    color: #414141;
 }
 
 .text-center {
@@ -45,8 +46,16 @@ body {
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .text-justify {
     text-align: justify;
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 .relative {
@@ -88,6 +97,11 @@ body {
     color: white;
 }
 
+.text-general {
+    font-size: 14px;
+    line-height: 18px;
+}
+
 .text-link-header {
     color: white;
     top: -3px;
@@ -111,4 +125,16 @@ body {
     color: $gray-va;
     font-size: 16px;
     line-height: 20px;
+}
+
+.title-category {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title-category-filter {
+    color: $blue-dark-va;
+    font-size: 18px;
+    font-weight: bold;
 }
