@@ -693,6 +693,12 @@ body {
   top: 0;
   left: 0;
   opacity: 0.2;
+  width: 170px;
+}
+@media screen and (min-width: 768px) {
+  .logo-position {
+    width: 368px;
+  }
 }
 
 .title-section {
@@ -724,9 +730,23 @@ body {
   color: white;
 }
 
+.text-blue-va {
+  color: #224364;
+}
+
+.text-in {
+  font-size: 18px;
+}
+
 .text-general {
   font-size: 14px;
   line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .text-general {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .text-link-header {
@@ -934,6 +954,27 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .header-blog {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-blog .title-category {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-blog-principal {
+    height: 45vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-blog-principal .title-category {
+    font-size: 64px;
+  }
+}
 
 .contain-blog {
   overflow: hidden;
@@ -947,6 +988,12 @@ body {
   border-radius: 50%;
   width: 55px;
   height: 55px;
+}
+@media screen and (min-width: 768px) {
+  .img-radius {
+    width: 79px;
+    height: 79px;
+  }
 }
 
 .img-post-selected {
@@ -965,6 +1012,50 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ft-blog {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #12253C;
+  opacity: 0.4;
+}
+
+.box-location {
+  overflow: hidden;
+  position: relative;
+  padding: 0 2em 2em 2em;
+}
+.box-location:before {
+  content: "";
+  border-left: 4px dashed rgba(18, 37, 60, 0.486);
+  border-right: 4px dashed rgba(18, 37, 60, 0.486);
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+}
+
+.box-location-r {
+  overflow: hidden;
+  position: relative;
+  padding: 0 2em 2em 2em;
+}
+.box-location-r:before {
+  content: "";
+  border-right: 4px dashed rgba(18, 37, 60, 0.486);
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+}
+
+.img-ink {
+  width: 30px;
+  position: relative;
+  top: -3px;
 }
 
 .social-fb {
@@ -986,6 +1077,24 @@ body {
 .comment {
   background: #f3f1f1;
   padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-desk {
+    display: none;
+  }
+}
+
+.footer-header {
+  height: 20vh;
+}
+
+.footer-h {
+  height: 80vh;
+}
+
+.find-section {
+  height: 100vh;
 }
 
 .input-form-contact {
@@ -1044,6 +1153,12 @@ li {
   float: left;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grid-menu {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -1061,7 +1176,33 @@ li {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .grid-contact {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-contain-blog,
+.grid-contain-form {
+    display: grid;
+    grid-template-columns: minmax(auto, 776px);
+    justify-content: center;
+  }
+}
+
+.grid-contain-form {
+  padding: 0 32px 0 32px;
+}
+@media screen and (min-width: 768px) {
+  .grid-contain-form {
+    padding: 0;
+  }
 }
 
 .grid-social {
@@ -1077,6 +1218,11 @@ li {
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .grid-footer-form {
+    grid-template-columns: 15fr 1fr;
+  }
+}
 
 .grid-steps {
   display: grid;
@@ -1089,6 +1235,13 @@ li {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 1em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .grid-filter {
+    margin-bottom: 0;
+  }
 }
 
 .share-social-grid {
@@ -1109,6 +1262,40 @@ li {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-filter-blog {
+    display: grid;
+    grid-template-columns: 0.94fr 2fr;
+    align-items: center;
+    grid-gap: 4em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-post-des {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+  }
+}
+
+.grid-fb {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-gap: 1em;
+}
+.grid-fb div {
+  background: #C4C4C4;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-option-contact {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
