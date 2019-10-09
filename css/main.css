@@ -830,27 +830,27 @@ body {
 }
 
 .bot-img {
-  background-image: url(../assets/images/devops-min.jpg);
+  background-image: url(../assets/images/bot.png);
 }
 
 .ux-img {
-  background-image: url(../assets/images/devops-min.jpg);
+  background-image: url(../assets/images/bombilla.png);
 }
 
 .bigdata-img {
-  background-image: url(../assets/images/devops-min.jpg);
+  background-image: url(../assets/images/cubo.png);
 }
 
 .cloud-img {
-  background-image: url(../assets/images/devops-min.jpg);
+  background-image: url(../assets/images/nube.png);
 }
 
 .server-img {
-  background-image: url(../assets/images/devops-min.jpg);
+  background-image: url(../assets/images/codigo.png);
 }
 
 .devops-img {
-  background-image: url(../assets/images/devops-min.jpg);
+  background-image: url(../assets/images/camioncito.png);
 }
 
 .bg-card-opacity {
