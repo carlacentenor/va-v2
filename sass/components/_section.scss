@@ -27,6 +27,9 @@
     padding: 2em;
     display: flex;
     align-items: flex-end;
+    @media screen and (min-width: 768px) {
+        height: auto;
+    }
 }
 
 .bg-blog-post {
@@ -157,33 +160,57 @@
 }
 
 .box-location {
-    overflow: hidden;
-    position: relative;
-    padding: 0 2em 2em 2em;
-    &:before {
-        content: "";
-        border-left: 4px dashed rgba(18, 37, 60, 0.486);
-        border-right: 4px dashed rgba(18, 37, 60, 0.486);
-        position: absolute;
-        top: -3px;
-        bottom: -3px;
-        left: -3px;
-        right: -3px;
+    @media screen and (min-width: 768px) {
+        overflow: hidden;
+        position: relative;
+        padding: 0 2em 2em 2em;
+        &:before {
+            content: "";
+            border-left: 4px dashed rgba(18, 37, 60, 0.486);
+            border-right: 4px dashed rgba(18, 37, 60, 0.486);
+            position: absolute;
+            top: -3px;
+            bottom: -3px;
+            left: -3px;
+            right: -3px;
+        }
     }
 }
 
 .box-location-r {
-    overflow: hidden;
-    position: relative;
     padding: 0 2em 2em 2em;
-    &:before {
-        content: "";
-        border-right: 4px dashed rgba(18, 37, 60, 0.486);
-        position: absolute;
-        top: -3px;
-        bottom: -3px;
-        left: -3px;
-        right: -3px;
+}
+
+.dashed-l {
+    @media screen and (min-width: 768px) {
+        overflow: hidden;
+        position: relative;
+        padding: 0 2em 2em 2em;
+        &:before {
+            content: "";
+            border-left: 4px dashed rgba(18, 37, 60, 0.486);
+            position: absolute;
+            top: -3px;
+            bottom: -3px;
+            left: -3px;
+            right: -3px;
+        }
+    }
+}
+
+.dashed-bot {
+    @media screen and (min-width: 768px) {
+        overflow: hidden;
+        position: relative;
+        &:before {
+            content: "";
+            border-bottom: 4px dashed rgba(18, 37, 60, 0.486);
+            position: absolute;
+            top: -3px;
+            bottom: -3px;
+            left: -3px;
+            right: -3px;
+        }
     }
 }
 
@@ -214,20 +241,35 @@
     padding: 1em;
 }
 
-.footer-desk {
+.hide-mobile {
     @media screen and (max-width: 768px) {
-        display: none;
+        display: none !important;
     }
 }
 
+.hide-desktop {
+    @media screen and (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.header-section {
+    height: 15vh;
+}
+
+// footer-desk
 .footer-header {
-    height: 20vh;
+    height: 15vh;
 }
 
 .footer-h {
-    height: 80vh;
+    @media screen and (min-width: 768px) {
+        height: 84vh;
+    }
 }
 
 .find-section {
-    height: 100vh;
+    @media screen and (min-width: 768px) {
+        height: 100vh;
+    }
 }

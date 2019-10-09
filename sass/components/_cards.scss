@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 242px;
+    @media screen and (min-width: 768px) {
+        height: auto;
+    }
 }
 
 .bot-img {
@@ -32,7 +35,7 @@
 
 .bg-card-opacity {
     background: rgba(0, 0, 0, 0.5);
-    height: inherit;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
