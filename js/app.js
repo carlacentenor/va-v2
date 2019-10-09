@@ -1,5 +1,7 @@
-var carousel;
 $(document).ready(function() {
-    carousel = $("ul");
-    carousel.itemslide();
+    $('#myContainer').multiscroll({
+
+        anchors: ['first', 'second', 'third'],
+        loopTop: true,
+    });
 });
