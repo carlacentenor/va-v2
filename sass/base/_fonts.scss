@@ -1,5 +1,5 @@
     // Mixin generate padding and margin
-    $max: 64;
+    $max: 136;
     $offset: 8;
     $unit: 'px';
     @mixin spaces-loop($className, $styleName) {
@@ -164,4 +164,9 @@
             line-height: 38px;
             text-align: justify;
         }
+    }
+    
+    .title-section-categorie {
+        font-size: 64px;
+        font-weight: bold;
     }
