@@ -1108,6 +1108,7 @@ body {
 .pos-link {
   top: 32px;
   left: 32px;
+  cursor: pointer;
 }
 
 .bg-card-categories {
@@ -1152,6 +1153,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s;
+}
+.bg-card-opacity:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .card-blog {
@@ -1453,6 +1459,39 @@ body {
 
 .transform-img {
   transform: rotate(-180deg);
+}
+
+.burger-menu {
+  width: 60px;
+  height: 60px;
+  background-color: #224364;
+  box-sizing: border-box;
+  padding: 10px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+
+.align-menu {
+  width: 100%;
+}
+.align-menu :nth-child(1) {
+  text-align: right;
+  margin-bottom: 12px;
+  width: 29px;
+  margin-left: 37%;
+}
+.align-menu :nth-child(2) {
+  margin-bottom: 12px;
+}
+.align-menu :nth-child(3) {
+  width: 29px;
+}
+
+.menu-h {
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 .input-form-contact {
