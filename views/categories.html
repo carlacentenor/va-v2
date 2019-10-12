@@ -17,23 +17,57 @@
         $(document).ready(function() {
             $('#myContainer').multiscroll({
 
-                anchors: ['first', 'second', 'third', 'bot'],
+                anchors: ['bot', 'uxui', 'bigdata', 'cloud', 'serverless', 'devops'],
                 menu: '#menu',
-                loopTop: true,
-                loopBottom: true
+                loopTop: false,
+                loopBottom: false
             });
         });
     </script>
 </head>
 
 <body>
+    <header>
+        <div class="burger-menu burger-menu-js flex-center">
+            <div class=" align-menu">
+                <div class="menu-h "></div>
+                <div class="menu-h "></div>
+                <div class="menu-h"></div>
+            </div>
+        </div>
+
+    </header>
+    <section class="bg-blue bg-menu hide-menu   relative menu-section">
+        <img class="absolute logo-position" src="assets/images/va-opacity.svg" alt="va-opacity">
+        <div class="burger-menu-close burger-menu-close-js absolute  flex-center">
+            <div class=" align-menu-c">
+                <div class="menu-c "></div>
+
+                <div class="menu-c"></div>
+            </div>
+        </div>
+
+
+        <div class="grid-menu">
+            <div class="pt-16 pb-16 "><a href="index.html" class="title-menu">Home</a></div>
+            <div class="pt-16 pb-16 "><a class="title-menu">Our Services</a></div>
+            <div class="pt-16 pb-16 "><a href="views/blog.html" class="title-menu">Blog</a></div>
+            <div class="pt-16 pb-16 "><a href="views/contact.html" class="title-menu">Contact us</a></div>
+        </div>
+
+
+
+    </section>
 
     <div id="myContainer" class="text-white h-100 relative">
 
         <div class="ms-left ">
             <div class="ms-section" style="background:url(../assets/images/prueba1.png); background-position: center center; background-size: cover  ;" id="left1">
                 <div class=" absolute pos-link">
-                    <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    <a href="../index.html">
+                        <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    </a>
+
                 </div>
                 <div class="pl-32 pr-64 pt-136">
                     <h1 class="text-white title-section-categorie">Bot</h1>
@@ -44,7 +78,10 @@
 
             <div class="ms-section" style="background:url(../assets/images/prueba1.png); background-position: center center; background-size: cover  ;" id="left2">
                 <div class=" absolute pos-link">
-                    <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+
+                    <a href="../index.html">
+                        <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    </a>
                 </div>
                 <div class="pl-32 pr-64 pt-136">
                     <h1 class="text-white title-section-categorie">UX -UI</h1>
@@ -55,7 +92,9 @@
 
             <div class="ms-section" style="background:url(../assets/images/prueba1.png); background-position: center center; background-size: cover  ;" id="left3">
                 <div class=" absolute pos-link">
-                    <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    <a href="../index.html">
+                        <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    </a>
                 </div>
                 <div class="pl-32 pr-64 pt-136">
                     <h1 class="text-white title-section-categorie">Big Data</h1>
@@ -65,11 +104,40 @@
             </div>
             <div class="ms-section" style="background:url(../assets/images/prueba1.png); background-position: center center; background-size: cover  ;" id="left4">
                 <div class=" absolute pos-link">
-                    <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    <a href="../index.html">
+                        <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    </a>
                 </div>
                 <div class="pl-32 pr-64 pt-136">
                     <h1 class="text-white title-section-categorie">Cloud</h1>
                     <p class="text-offer-des pt-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in a viverra nulla vel, et scelerisque .</p>
+                </div>
+
+            </div>
+            <div class="ms-section" style="background:url(../assets/images/prueba1.png); background-position: center center; background-size: cover  ;" id="left5">
+                <div class=" absolute pos-link">
+                    <a href="../index.html">
+                        <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    </a>
+                </div>
+                <div class="pl-32 pr-64 pt-136">
+                    <h1 class="text-white title-section-categorie">Serverless</h1>
+                    <p class="text-offer-des pt-32">The maximum level within the computing services can be reached with Serverless. It gives us the ability to host our code or application and to execute it when certain events occur, without the need to manage any servers.
+                    </p>
+                </div>
+
+            </div>
+            <div class="ms-section" style="background:url(../assets/images/prueba1.png); background-position: center center; background-size: cover  ;" id="left6">
+                <div class=" absolute pos-link">
+
+                    <a href="../index.html">
+                        <span><img src="../assets/images/arrow.png" alt="arrow"></span> <span class="text-link-header-scroll relative">Home</span>
+                    </a>
+                </div>
+                <div class="pl-32 pr-64 pt-136">
+                    <h1 class="text-white title-section-categorie">DevOps</h1>
+                    <p class="text-offer-des pt-32">We use DevOps to provide greater business value and responsiveness by streamlining the processes through which an idea passes from its development to its implementation.
+                    </p>
                 </div>
 
             </div>
@@ -115,11 +183,31 @@
                     <img src="../assets/images/down.png" alt="">
                 </div>
             </div>
+            <div class="ms-section" style="background:url(../assets/images/prueba2.png);  background-position: center center; background-size: cover ; border-left: 1px solid white; position: relative;" id="right5">
+
+                <div class="pl-64 pr-32 pd-perce">
+                    <p class="text-offer-des ">The service will automatically scale to suit the demand. In addition, it allows you to pay based on the resources consumed.</p>
+                </div>
+                <div class="absolute position-link-blog"><span class="text-link-header relative">Visit our blog</span><span><img class="transform-img" src="../assets/images/arrow.png" alt=""></span></div>
+                <div class="absolute arrow-down">
+                    <img src="../assets/images/down.png" alt="">
+                </div>
+            </div>
+            <div class="ms-section" style="background:url(../assets/images/prueba2.png);  background-position: center center; background-size: cover ; border-left: 1px solid white; position: relative;" id="right6">
+
+                <div class="pl-64 pr-32 pd-perce">
+                    <p class="text-offer-des ">It involves using scalability and automation, as well as greater use of dynamic infrastructure.</p>
+                </div>
+                <div class="absolute position-link-blog"><span class="text-link-header relative">Visit our blog</span><span><img class="transform-img" src="../assets/images/arrow.png" alt=""></span></div>
+                <!-- <div class="absolute arrow-down">
+                    <img src="../assets/images/down.png" alt="">
+                </div> -->
+            </div>
 
         </div>
 
     </div>
-
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
