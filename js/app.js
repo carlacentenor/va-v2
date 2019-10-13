@@ -34,3 +34,7 @@ linkServerless.on('click', () => {
 linkDevops.on('click', () => {
     window.location.href = 'views/categories.html#devops';
 });
+
+
+/////
+//

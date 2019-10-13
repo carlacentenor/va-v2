@@ -1096,6 +1096,11 @@ body {
   text-decoration: none;
 }
 
+.text-offer-mob {
+  font-size: 20px;
+  line-height: 27px;
+}
+
 .btn-general {
   background: #FFFFFF;
   border: 1px solid #224364;
@@ -1651,6 +1656,18 @@ body {
     transform: translateX(-50%) translateY(10px);
   }
 }
+.fp-tableCell {
+  vertical-align: top;
+}
+
+.position-link-slider {
+  bottom: 32px;
+  right: 32px;
+}
+.position-link-slider .text-link-header {
+  top: 5px;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
