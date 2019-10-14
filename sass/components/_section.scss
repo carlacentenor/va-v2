@@ -405,6 +405,17 @@
     }
 }
 
+.box-direct-contact {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 88px;
+    height: 204px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 // Video
 #myVideo {
     position: absolute;

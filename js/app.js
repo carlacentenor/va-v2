@@ -8,6 +8,9 @@ const linkCloud = $('.link-cloud');
 const linkServerless = $('.link-serverless');
 const linkDevops = $('.link-devops');
 
+
+
+
 menuButton.on('click', () => {
     menuSection.addClass("show-menu");
 });
