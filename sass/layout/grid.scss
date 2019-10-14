@@ -16,11 +16,13 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
+    height: 75vh;
     @media screen and(min-width: 768px) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: none;
         justify-items: stretch;
         align-items: stretch;
+        height: 85vh;
     }
 }
 
@@ -130,14 +132,15 @@
 }
 
 .grid-social-mobile {
-    padding: 32px 16px 32px 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+    height: 10vh;
 }
 
 .grid-ofter {
+    height: 85vh;
     @media screen and (min-width: 768px) {
         display: grid;
         grid-template-areas: "blog categorie";
@@ -154,7 +157,9 @@
     grid-area: categorie;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 65vh;
     @media screen and (min-width: 768px) {
+        height: auto;
         display: grid;
         grid-template-areas: "text text bot ux" "bigdata cloud server devops";
         grid-template-columns: repeat(4, 1fr);
