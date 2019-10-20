@@ -62,30 +62,13 @@
 }
 
 .bg-process {
-    background-image: url(../assets/images/devops-min.jpg);
+    background-image: url(../assets/images/ofter.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
     color: white;
     box-sizing: border-box;
-    .bg-process--opacity {
-        height: inherit;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: flex-end;
-        h3 {
-            @include mx-title-process;
-            font-size: 36px;
-            font-weight: bold;
-        }
-        .description-process {
-            @include mx-title-process;
-            font-size: 16px;
-            padding-bottom: 2em;
-            line-height: 20px;
-        }
-    }
     .bg-process-contain {
         padding: 2em;
     }
@@ -322,6 +305,10 @@
     right: 16px;
     cursor: pointer;
     z-index: 5;
+    @media screen and (min-width: 768px) {
+        top: 29px;
+        right: 29px;
+    }
 }
 
 .align-menu {
@@ -416,6 +403,14 @@
     border-bottom-left-radius: 10px;
 }
 
+.line {
+    height: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 // Video
 #myVideo {
     position: absolute;
@@ -458,4 +453,23 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     width: 100%;
+}
+
+.box-contact-blog {
+    z-index: 5;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.fx-header {
+    z-index: 4;
+    background: white;
+    width: 100%;
+}
+
+.position-text-we-do {
+    position: relative;
+    top: 18em;
 }
