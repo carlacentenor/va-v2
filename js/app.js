@@ -41,3 +41,6 @@ linkDevops.on('click', () => {
 
 /////
 //
+var slider = $('#slider').swipeSlider();
+
+
