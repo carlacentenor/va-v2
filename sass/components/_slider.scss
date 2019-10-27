@@ -105,11 +105,28 @@
     position: relative;
 }
 
-.bg-slide {}
-
-.slide-1 {
-    background: url(../assets/images/devops-min.jpg);
+@mixin positionbg {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.slide-1 {
+    background: linear-gradient(90.71deg, rgba(18, 37, 60, 0.8) 0.49%, rgba(196, 196, 196, 0) 104.18%), url(../assets/images/research.jpg);
+    @include positionbg();
+}
+
+.slide-2 {
+    background: linear-gradient(90.71deg, rgba(18, 37, 60, 0.8) 0.49%, rgba(196, 196, 196, 0) 104.18%), url(../assets/images/ideate.jpg);
+    @include positionbg();
+}
+
+.slide-3 {
+    background: linear-gradient(90.71deg, rgba(18, 37, 60, 0.8) 0.49%, rgba(196, 196, 196, 0) 104.18%), url(../assets/images/prototype.jpg);
+    @include positionbg();
+}
+
+.slide-4 {
+    background: linear-gradient(90.71deg, rgba(18, 37, 60, 0.8) 0.49%, rgba(196, 196, 196, 0) 104.18%), url(../assets/images/create.jpg);
+    @include positionbg();
 }
