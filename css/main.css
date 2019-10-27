@@ -1270,7 +1270,7 @@ body {
 }
 
 .bg-process {
-  background-image: url(../assets/images/ofter.png);
+  background: linear-gradient(90deg, rgba(18, 37, 60, 0.51) 0%, rgba(34, 67, 100, 0.51) 100%), url(../assets/images/process.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1506,7 +1506,7 @@ body {
 }
 
 .bg-menu {
-  background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/menu-bg.png);
+  background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/menu.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
