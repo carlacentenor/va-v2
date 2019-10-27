@@ -1113,6 +1113,16 @@ body {
   text-align: left;
 }
 
+.title-process-mob {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.description-process {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .btn-general {
   background: #FFFFFF;
   border: 1px solid #224364;
@@ -1271,6 +1281,13 @@ body {
 }
 .bg-process .bg-process-contain {
   padding: 2em;
+}
+
+.bg-process-contain--mob {
+  position: absolute;
+  bottom: 32px;
+  padding: 2em;
+  box-sizing: border-box;
 }
 
 .bg-steps {
@@ -1743,6 +1760,26 @@ body {
   padding-top: 65%;
 }
 
+.arrow-r {
+  top: 50%;
+  transform: translateX(-50%);
+  right: 16px;
+  animation: srollRight 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes srollRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
 .arrow-down {
   left: 0px;
   top: 88%;

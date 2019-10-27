@@ -74,6 +74,13 @@
     }
 }
 
+.bg-process-contain--mob {
+    position: absolute;
+    bottom: 32px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
 .bg-steps {
     background-color: white;
     color: $blue-va;
