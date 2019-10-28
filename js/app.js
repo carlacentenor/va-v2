@@ -7,9 +7,11 @@ const linkBigData = $('.link-bigdata');
 const linkCloud = $('.link-cloud');
 const linkServerless = $('.link-serverless');
 const linkDevops = $('.link-devops');
-
-
-
+const linkResearch = $('.research-js');
+const linkIdeate = $('.ideate-js');
+const linkPrototipe = $('.prototipe-js');
+const linkCreate = $('.create-js');
+// Route Menu
 
 menuButton.on('click', () => {
     menuSection.addClass("show-menu");
@@ -18,6 +20,8 @@ menuButton.on('click', () => {
 menuButtonExit.on('click', () => {
     menuSection.removeClass("show-menu");
 });
+
+// Route Categories
 
 linkBot.on('click', () => {
     window.location.href = 'views/categories.html#bot';
@@ -38,9 +42,22 @@ linkDevops.on('click', () => {
     window.location.href = 'views/categories.html#devops';
 });
 
+// Route Categories
+linkResearch.on('click', () => {
+    window.location.href = 'views/process.html#research';
+});
+linkIdeate.on('click', () => {
+    window.location.href = 'views/process.html#ideate';
+});
+linkPrototipe.on('click', () => {
+    window.location.href = 'views/process.html#prototipe';
+});
 
-/////
-//
+linkCreate.on('click', () => {
+    window.location.href = 'views/process.html#create';
+});
+
+
+// Execute library slider horizontal
+
 var slider = $('#slider').swipeSlider();
-
-
