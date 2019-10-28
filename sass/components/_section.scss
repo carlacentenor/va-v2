@@ -14,7 +14,7 @@
 }
 
 .bg-blue {
-    height: 100vh;
+    height: 100vh !important;
     width: 100%;
     background: $blue-dark-va;
     display: flex;

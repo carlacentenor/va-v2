@@ -63,7 +63,6 @@ linkCreate.on('click', () => {
 
 // Execute library slider horizontal mobile
 
-  
     var slider = $('#slider').swipeSlider();
 
 

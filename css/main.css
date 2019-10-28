@@ -1221,7 +1221,7 @@ body {
 }
 
 .bg-blue {
-  height: 100vh;
+  height: 100vh !important;
   width: 100%;
   background: #12253c;
   display: flex;
