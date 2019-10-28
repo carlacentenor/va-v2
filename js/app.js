@@ -58,6 +58,14 @@ linkCreate.on('click', () => {
 });
 
 
-// Execute library slider horizontal
 
-var slider = $('#slider').swipeSlider();
+
+
+// Execute library slider horizontal mobile
+
+  
+    var slider = $('#slider').swipeSlider();
+
+
+
+
