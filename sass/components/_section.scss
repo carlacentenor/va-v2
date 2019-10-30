@@ -474,8 +474,8 @@
 #mask {
     object-fit: cover;
 
-    -webkit-mask-image: url(https://carlacentenor.github.io/pruebasvg/logoVA.svg);
-    mask-image: url(https://carlacentenor.github.io/pruebasvg/logoVA.svg);
+    -webkit-mask-image: url(https://carlacentenor.github.io/pruebasvg/logoVA.svg); // cambiar por la url del dominio
+    mask-image: url(https://carlacentenor.github.io/pruebasvg/logoVA.svg);// cambiar por la url del dominio
     mask-size: 100%;
     -webkit-mask-size: 100%;
     -webkit-mask-position: center center;
