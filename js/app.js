@@ -11,6 +11,8 @@ const linkResearch = $('.research-js');
 const linkIdeate = $('.ideate-js');
 const linkPrototipe = $('.prototipe-js');
 const linkCreate = $('.create-js');
+
+const sectionBlogMobile = $('.blog-js');
 // Route Menu
 
 menuButton.on('click', () => {
