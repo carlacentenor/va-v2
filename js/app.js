@@ -62,8 +62,8 @@ linkCreate.on('click', () => {
 });
 
 
-    $(window).scroll(function (event) {
-        if (screen.width > 1024) { 
+$(window).scroll(function (event) {
+    if (screen.width > 1024) {
         var scrollTop = $(window).scrollTop();
         if (scrollTop >= (screenHeight / 2) && scrollTop < (screenHeight * 2)) {
             $('.fixed-container').fadeIn('slow');
@@ -71,8 +71,9 @@ linkCreate.on('click', () => {
             $('.box-contact-js').fadeOut('slow');
         }
     }
-    });
-    
+
+});
+
 
 
 
