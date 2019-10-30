@@ -1697,6 +1697,14 @@ body {
   top: 18em;
 }
 
+.box-contact-js {
+  display: none;
+}
+
+.fixed-container {
+  position: fixed;
+}
+
 .input-form-contact {
   background: transparent;
   border: none;
@@ -1962,6 +1970,12 @@ body {
   grid-template-rows: 1fr auto 1fr;
   align-items: center;
   justify-items: center;
+  width: 88px;
+  height: 204px;
+}
+
+.box-contact-js {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

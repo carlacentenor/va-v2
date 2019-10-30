@@ -13,6 +13,8 @@ const linkPrototipe = $('.prototipe-js');
 const linkCreate = $('.create-js');
 
 const sectionBlogMobile = $('.blog-js');
+
+const screenHeight = window.screen.height;
 // Route Menu
 
 menuButton.on('click', () => {
@@ -60,12 +62,24 @@ linkCreate.on('click', () => {
 });
 
 
+    $(window).scroll(function (event) {
+        if (screen.width > 1024) { 
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >= (screenHeight / 2) && scrollTop < (screenHeight * 2)) {
+            $('.fixed-container').fadeIn('slow');
+        } else {
+            $('.box-contact-js').fadeOut('slow');
+        }
+    }
+    });
+    
+
 
 
 
 // Execute library slider horizontal mobile
 
-    var slider = $('#slider').swipeSlider();
+var slider = $('#slider').swipeSlider();
 
 
 

@@ -26,6 +26,8 @@
     }
 }
 
+
+
 .grid-contact-blog {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -43,6 +45,13 @@
     grid-template-rows: 1fr auto 1fr;
     align-items: center;
     justify-items: center;
+    width: 88px;
+    height: 204px;
+}
+
+
+.box-contact-js{
+    display: none ;
 }
 
 .grid-contain-blog,
