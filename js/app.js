@@ -62,7 +62,7 @@ linkCreate.on('click', () => {
 });
 
 
-$(window).scroll(function (event) {
+$(window).scroll(function(event) {
     if (screen.width > 1024) {
         var scrollTop = $(window).scrollTop();
         if (scrollTop >= (screenHeight / 2) && scrollTop < (screenHeight * 2)) {
@@ -81,7 +81,3 @@ $(window).scroll(function (event) {
 // Execute library slider horizontal mobile
 
 var slider = $('#slider').swipeSlider();
-
-
-
-

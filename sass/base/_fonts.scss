@@ -80,7 +80,10 @@
         @include mx-title-section;
         font-weight: bold;
         font-size: 32px;
-        @media screen and (min-width: 768px) {
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 50px;
+        }
+        @media screen and (min-width: 1025px) {
             font-size: 48px;
         }
     }
@@ -88,6 +91,9 @@
     .text-section {
         @include mx-title-section;
         font-size: 22px;
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 1.5rem;
+        }
     }
     
     .text-card-blog {
@@ -144,12 +150,19 @@
         color: $gray-va;
         font-size: 16px;
         line-height: 20px;
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
     }
     
     .title-category {
         color: #ffffff;
         font-size: 28px;
         font-weight: bold;
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 36px;
+        }
     }
     
     .title-category-filter {
@@ -180,6 +193,10 @@
     .text-offer-mob {
         font-size: 20px;
         line-height: 27px;
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 1.5rem;
+            line-height: 36px;
+        }
     }
     
     .text-we-do {
@@ -197,9 +214,16 @@
     .title-process-mob {
         font-size: 36px;
         font-weight: bold;
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 3rem;
+        }
     }
     
     .description-process {
         font-size: 16px;
         line-height: 20px;
+        @media screen and(min-width: 768px) and (max-width: 1024px) {
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
     }
