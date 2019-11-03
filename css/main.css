@@ -1527,11 +1527,11 @@ body {
 }
 
 .burger-menu {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: #224364;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   position: fixed !important;
   top: 16px;
   right: 16px;
@@ -1540,6 +1540,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .burger-menu {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
     top: 29px;
     right: 29px;
   }
@@ -1550,21 +1553,42 @@ body {
 }
 .align-menu :nth-child(1) {
   text-align: right;
-  margin-bottom: 12px;
-  width: 29px;
+  margin-bottom: 8px;
+  width: 18px;
   margin-left: 37%;
 }
+@media screen and (min-width: 768px) {
+  .align-menu :nth-child(1) {
+    margin-bottom: 12px;
+    width: 29px;
+  }
+}
 .align-menu :nth-child(2) {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .align-menu :nth-child(2) {
+    margin-bottom: 12px;
+  }
 }
 .align-menu :nth-child(3) {
-  width: 29px;
+  width: 18px;
+}
+@media screen and (min-width: 768px) {
+  .align-menu :nth-child(3) {
+    width: 29px;
+  }
 }
 
 .menu-h {
-  height: 4px;
+  height: 3px;
   background-color: white;
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .menu-h {
+    height: 4px;
+  }
 }
 
 .hide-menu {
@@ -1604,19 +1628,33 @@ body {
 }
 
 .burger-menu-close {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
-  top: 32px;
-  right: 32px;
+  top: 16px;
+  right: 16px;
+}
+@media screen and (min-width: 768px) {
+  .burger-menu-close {
+    width: 60px;
+    height: 60px;
+    top: 32px;
+    right: 32px;
+    padding: 10px;
+  }
 }
 .burger-menu-close .menu-c {
-  height: 4px;
+  height: 3px;
   background-color: #224364;
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .burger-menu-close .menu-c {
+    height: 4px;
+  }
 }
 
 .menu-section a {
