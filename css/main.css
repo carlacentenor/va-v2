@@ -1830,6 +1830,10 @@ body {
   animation: srollRight 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.move-right {
+  animation: srollRight 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 @keyframes srollRight {
   0% {
     opacity: 0;
@@ -1849,6 +1853,16 @@ body {
   animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.arrow-up {
+  left: 0px;
+  top: 88%;
+  animation: scrollUp 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.rotation-h {
+  transform: rotate(180deg);
+}
+
 @keyframes scrollDown {
   0% {
     opacity: 0;
@@ -1862,6 +1876,19 @@ body {
     transform: translateX(-50%) translateY(10px);
   }
 }
+@keyframes scrollUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
 .fp-tableCell {
   vertical-align: top;
 }
@@ -1871,7 +1898,8 @@ body {
   right: 32px;
 }
 .position-link-slider .text-link-header {
-  top: 5px;
+  top: 2px;
+  right: 15px;
 }
 
 .ss-slider {

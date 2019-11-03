@@ -37,6 +37,10 @@
     animation: srollRight 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.move-right {
+    animation: srollRight 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 @keyframes srollRight {
     0% {
         opacity: 0;
@@ -58,6 +62,16 @@
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.arrow-up {
+    left: 0px;
+    top: 88%;
+    animation: scrollUp 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.rotation-h {
+    transform: rotate(180deg);
+}
+
 @keyframes scrollDown {
     0% {
         opacity: 0;
@@ -72,6 +86,20 @@
     }
 }
 
+@keyframes scrollUp {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
 // SLider Horizontal
 .fp-tableCell {
     vertical-align: top;
@@ -81,7 +109,8 @@
     bottom: 32px;
     right: 32px;
     .text-link-header {
-        top: 5px;
+        top: 2px;
+        right: 15px;
     }
 }
 
@@ -132,42 +161,39 @@
 }
 
 // Categories
-
-.slide-1c{
+.slide-1c {
     background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/bot.jpg);
     @include positionbg();
     height: 100vh !important;
 }
 
-.slide-2c{
+.slide-2c {
     background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/uxui.jpg);
     @include positionbg();
     height: 100vh !important;
 }
 
-.slide-3c{
+.slide-3c {
     background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/bigdata.jpg);
     @include positionbg();
     background-position: 5% center;
     height: 100vh !important;
 }
 
-.slide-4c{
+.slide-4c {
     background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/cloud.jpg);
     @include positionbg();
- 
     height: 100vh !important;
 }
 
-.slide-5c{
+.slide-5c {
     background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/serverless.jpg);
     @include positionbg();
- 
     height: 100vh !important;
 }
-.slide-6c{
+
+.slide-6c {
     background: linear-gradient(rgba(18, 37, 60, 0.8), rgba(18, 37, 60, 0.8)), url(../assets/images/devops.jpg);
     @include positionbg();
- 
     height: 100vh !important;
 }
