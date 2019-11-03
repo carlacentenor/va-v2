@@ -11,9 +11,7 @@ const linkResearch = $('.research-js');
 const linkIdeate = $('.ideate-js');
 const linkPrototipe = $('.prototipe-js');
 const linkCreate = $('.create-js');
-
 const sectionBlogMobile = $('.blog-js');
-
 const screenHeight = window.screen.height;
 // Route Menu
 
@@ -60,8 +58,11 @@ linkPrototipe.on('click', () => {
 linkCreate.on('click', () => {
     window.location.href = 'views/process.html#create';
 });
-
-
+// Execute library slider horizontal mobile
+if (screen.width < 1025) {
+    var slider = $('#slider').swipeSlider();
+}
+// Hide or Show mini box the contact
 $(window).scroll(function(event) {
     if (screen.width > 1024) {
         var scrollTop = $(window).scrollTop();
@@ -74,10 +75,17 @@ $(window).scroll(function(event) {
 
 });
 
+// Send Email 
 
+$(".mail-js").click(function() {
+    document.location.href = "mailto:hola@vonallem.la";
+});
 
+// View location google-maps
 
+const searchLocation = () => {
+    document.location.href = "https://goo.gl/maps/mE8sUtptEiFGbZXT6";
+}
 
-// Execute library slider horizontal mobile
-
-var slider = $('#slider').swipeSlider();
+$(".location-js").click(searchLocation())
+$(".location-post-js").click(searchLocation())
