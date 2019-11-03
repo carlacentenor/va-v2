@@ -84,8 +84,12 @@ $(".mail-js").click(function() {
 // View location google-maps
 
 const searchLocation = () => {
-    document.location.href = "https://goo.gl/maps/mE8sUtptEiFGbZXT6";
+
 }
 
-$(".location-js").click(searchLocation())
-$(".location-post-js").click(searchLocation())
+$(".location-js").click(function() {
+    document.location.href = "https://goo.gl/maps/mE8sUtptEiFGbZXT6";
+})
+$(".location-post-js").click(function() {
+    document.location.href = "https://goo.gl/maps/mE8sUtptEiFGbZXT6";
+})
