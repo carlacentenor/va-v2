@@ -1264,11 +1264,19 @@ body {
   font-weight: 600;
   line-height: 41px;
 }
+.text-content-ie a {
+  text-decoration: none;
+  color: #12253c;
+}
 
 .text-social-ie {
   font-size: 25px;
   color: #12253c;
   font-weight: 600;
+}
+
+.text-not-found-ie {
+  opacity: 0.3;
 }
 
 .btn-general {
